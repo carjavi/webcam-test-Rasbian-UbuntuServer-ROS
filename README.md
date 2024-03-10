@@ -27,7 +27,6 @@ fswebcam image.jpg
 ```
 fswebcam --device /dev/video1 image.jpg
 ```
-<br>
 
 ### ffmpeg
 ```
@@ -50,12 +49,14 @@ sudo apt install ffmpeg -y
 ffmpeg -f video4linux2 -framerate 60 -video_size 1920x1080 -input_format mjpeg -i /dev/video0 -f alsa -i hw:1 output.mp4
 ```
 
-# From GUI ubuntu
+<br>
+
+# Testing from GUI Ubuntu
 Application ```cheese```
 
 <br>
 
-# Test from Browser
+# Testing from Browser
 https://es.webcamtests.com/
 
 <br>
