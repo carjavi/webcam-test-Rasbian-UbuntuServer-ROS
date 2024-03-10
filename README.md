@@ -15,7 +15,7 @@ ls /dev/video*
 lsusb
 ```
 
-## Picture
+## Pictures
 ### fswebcam
 ```
 sudo apt install fswebcam -y
@@ -42,7 +42,7 @@ ffmpeg -f v4l2 -video_size 1280x720 -i /dev/video0 -frames 1 out.jpg
 
 <br>
 
-# videos
+# Videos
 ```
 sudo apt install ffmpeg -y
 ```
@@ -51,9 +51,9 @@ ffmpeg -f video4linux2 -framerate 60 -video_size 1920x1080 -input_format mjpeg -
 ```
 
 # From GUI ubuntu
-Application cheese
+Application ```cheese```
 
-# test from browser
+# Test from Browser
 https://es.webcamtests.com/
 
 # Install usb_cam ROS Package
