@@ -8,14 +8,27 @@
 
 <br>
 
-# Test camara USB Webcam
+# Test camera USB Webcam
+```
+sudo apt-get-update && sudo apt full-upgrade -y
+```
+
 Check info webcam USB:
 ```
 ls /dev/video*
 lsusb
 ```
 
-# Pictures
+RPI About the Camera Modules info: https://www.raspberrypi.com/documentation/accessories/camera.html#libcamera-and-libcamera-apps
+
+# Taking Photos
+```
+libcamera-jpeg -o image.jpg
+```
+```
+raspistill -o testshot.jpg
+```
+
 ### fswebcam
 ```
 sudo apt install fswebcam -y
@@ -27,6 +40,8 @@ fswebcam image.jpg
 ```
 fswebcam --device /dev/video1 image.jpg
 ```
+
+
 
 ### ffmpeg
 ```
@@ -41,7 +56,12 @@ ffmpeg -f v4l2 -video_size 1280x720 -i /dev/video0 -frames 1 out.jpg
 
 <br>
 
-# Videos
+# Recording Video
+To capture a 10 second video with your Raspberry Pi camera module
+```
+libcamera-vid -t 10000 -o video.h264
+```
+## ffmpeg
 ```
 sudo apt install ffmpeg -y
 ```
@@ -68,6 +88,11 @@ https://github.com/carjavi/ROS-web-video-server
 
 # Video Streaming Using Python OpenCV/ UDP protocol/ Socket Programming
 https://github.com/carjavi/video-streaming-python-openCV-UDP-socket
+
+<br>
+
+# Webcam on ROS Node
+https://github.com/carjavi/raspicam_node
 
 <br>
 
