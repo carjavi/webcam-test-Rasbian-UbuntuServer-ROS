@@ -15,7 +15,7 @@ ls /dev/video*
 lsusb
 ```
 
-## Pictures
+# Pictures
 ### fswebcam
 ```
 sudo apt install fswebcam -y
