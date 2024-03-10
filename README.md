@@ -53,14 +53,21 @@ ffmpeg -f video4linux2 -framerate 60 -video_size 1920x1080 -input_format mjpeg -
 # From GUI ubuntu
 Application ```cheese```
 
+<br>
+
 # Test from Browser
 https://es.webcamtests.com/
+
+<br>
 
 # Install usb_cam ROS Package
 https://github.com/carjavi/ROS-web-video-server
 
+<br>
+
 # Video Streaming Using Python OpenCV/ UDP protocol/ Socket Programming
 https://github.com/carjavi/video-streaming-python-openCV-UDP-socket
+
 <br>
 
 ---
