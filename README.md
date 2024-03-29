@@ -74,6 +74,12 @@ ffmpeg -f video4linux2 -framerate 60 -video_size 1920x1080 -input_format mjpeg -
 # Testing from GUI Ubuntu
 Application ```cheese```
 
+## driver web cam 
+```
+sudo apt-get update
+sudo apt-get install webcam
+```
+
 <br>
 
 # Testing from Browser
@@ -83,6 +89,20 @@ https://es.webcamtests.com/
 
 # Install usb_cam ROS Package
 https://github.com/carjavi/ROS-web-video-server
+
+## uso de la camara en Noetic ROS
+```
+ls /dev/video*
+```
+Conociendo la ruta del nodo del dispositivo de nuestra cámara (/dev/video2), ahora verificaremos los atributos USB de la cámara usando el comando:
+```
+libuvc_camera
+```
+usaremos el paquete libuvc_camera de ros.
+```
+sudo apt-get install ros-noetic-libuvc-camera
+```
+Después de eso, estamos listos para crear el paquete ROS
 
 <br>
 
