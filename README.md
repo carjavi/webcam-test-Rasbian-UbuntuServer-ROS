@@ -21,7 +21,7 @@ lsusb
 
 RPI About the Camera Modules info: https://www.raspberrypi.com/documentation/accessories/camera.html#libcamera-and-libcamera-apps
 
-# Taking Photos
+# Taking Photos (Raspberry Pi Camera Modules)
 ```
 libcamera-jpeg -o image.jpg
 ```
@@ -29,7 +29,7 @@ libcamera-jpeg -o image.jpg
 raspistill -o testshot.jpg
 ```
 
-### fswebcam
+### fswebcam (USB cameras)
 ```
 sudo apt install fswebcam -y
 ```
